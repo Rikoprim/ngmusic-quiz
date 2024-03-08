@@ -4,14 +4,14 @@ import vbutton from '@/components/base/VButton.vue'
 import appcard from '@/components/AppCard.vue'
 import screensearch from '@/components/ScreenSearch.vue'
 import { ref, type PropType, toRefs } from 'vue'
-import type { ProductResponse } from '../types/playlist'
+import type { PlaylistResponse } from '../types/playlist'
 import { usePlaylistStore } from '../stores/playlist'
 
 const store = usePlaylistStore()
 
 const props = defineProps({
   dataPlaylist: {
-    type: Array as PropType<ProductResponse['products']>,
+    type: Array as PropType<PlaylistResponse['results']>,
     default: () => []
   }
 })

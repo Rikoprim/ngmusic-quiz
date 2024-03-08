@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { toRefs, defineEmits } from 'vue';
+import { toRefs } from 'vue';
 
 const props = defineProps({
   type: {
