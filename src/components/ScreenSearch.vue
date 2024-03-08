@@ -2,7 +2,7 @@
 import mdiClose from '@/components/icon/mdi-close.vue'
 import vbutton from '@/components/base/VButton.vue'
 import vinput from '@/components/base/VInput.vue'
-import { usePlaylistStore } from '../store/playlist'
+import { usePlaylistStore } from '../stores/playlist'
 import { ref } from 'vue';
 
 const store = usePlaylistStore();
@@ -63,4 +63,4 @@ const handleSearch = async () => {
   font-weight: bold;
   color: var(--color-text);
 }
-</style>
+</style>../stores/playlist

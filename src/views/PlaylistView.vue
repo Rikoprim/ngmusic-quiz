@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import pageplaylist from '@/components/PagePlaylist.vue'
 import { computed } from 'vue'
-import { usePlaylistStore } from '../store/playlist'
+import { usePlaylistStore } from '../stores/playlist'
 
 const store = usePlaylistStore();
 
@@ -13,4 +13,4 @@ const getPlaylist = computed(() => {
 
 <template>
   <pageplaylist :data-playlist="getPlaylist" />
-</template>
+</template>../stores/playlist

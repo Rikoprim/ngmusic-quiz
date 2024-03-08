@@ -3,9 +3,9 @@ import appheader from '@/components/AppHeader.vue'
 import vbutton from '@/components/base/VButton.vue'
 import appcard from '@/components/AppCard.vue'
 import screensearch from '@/components/ScreenSearch.vue'
-import { ref, type PropType, toRefs, computed } from 'vue'
-import type { ProductResponse } from '@/types/playlist'
-import { usePlaylistStore } from '../store/playlist'
+import { ref, type PropType, toRefs } from 'vue'
+import type { ProductResponse } from '../types/playlist'
+import { usePlaylistStore } from '../stores/playlist'
 
 const store = usePlaylistStore()
 
@@ -103,3 +103,4 @@ h3 span {
   margin-top: 20px;
 }
 </style>
+../stores/playlist

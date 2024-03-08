@@ -3,7 +3,7 @@ import { computed, ref } from 'vue';
 import vbutton from '@/components/base/VButton.vue'
 import vinput from '@/components/base/VInput.vue'
 import { useRouter } from 'vue-router';
-import { usePlaylistStore } from '../store/playlist'
+import { usePlaylistStore } from '../stores/playlist'
 
 const store = usePlaylistStore();
 const router = useRouter()
@@ -33,4 +33,4 @@ const handleSearch = async () => {
   bottom: 26px;
   width: auto;
 }
-</style>
+</style>../stores/playlist
