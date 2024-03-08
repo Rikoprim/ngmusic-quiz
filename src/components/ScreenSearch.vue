@@ -10,10 +10,8 @@ const search = ref<string>('')
 const emit = defineEmits(['handleClose'])
 
 const handleSearch = async () => {
-  const res = await store.fetchPlaylist({ term: search.value, limit: 10 });
-  if (res as any) {
-    emit('handleClose', false)
-  }
+  await store.fetchPlaylist({ term: search.value, limit: 10 });
+  emit('handleClose', false)
 }
 </script>
 
@@ -61,6 +59,8 @@ const handleSearch = async () => {
 .form-action h4 {
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 16px;
+  letter-spacing: 0.71px;
   color: var(--color-text);
 }
-</style>../stores/playlist
+</style>

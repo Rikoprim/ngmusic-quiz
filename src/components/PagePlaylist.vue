@@ -2,6 +2,7 @@
 import appheader from '@/components/AppHeader.vue'
 import vbutton from '@/components/base/VButton.vue'
 import appcard from '@/components/AppCard.vue'
+import skeleton from '@/components/AppSkeleton.vue'
 import screensearch from '@/components/ScreenSearch.vue'
 import { ref, type PropType, toRefs } from 'vue'
 import type { PlaylistResponse } from '../types/playlist'
@@ -44,7 +45,11 @@ const handleLoadMore = async () => {
       </h3>
 
       <div v-for="item in dataPlaylist" :key="item.trackId">
+        <div v-if="store.isLoading">
+          <skeleton />
+        </div>
         <appcard
+          v-else
           :artist="item.artistName"
           :title="item.trackCensoredName"
           :genre="item.primaryGenreName"
@@ -76,7 +81,7 @@ const handleLoadMore = async () => {
   font-size: 14px;
   font-weight: normal;
   color: #334155;
-  margin-bottom: 28px;
+  margin-bottom: 38px;
   letter-spacing: 0.5px;
 }
 h3 span {
@@ -84,6 +89,7 @@ h3 span {
   font-weight: bold;
   letter-spacing: 0.64px;
   color: var(--text-primary);
+  text-transform: capitalize;
 }
 .no-data {
   text-align: center;
@@ -103,4 +109,3 @@ h3 span {
   margin-top: 20px;
 }
 </style>
-../stores/playlist

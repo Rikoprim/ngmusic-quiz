@@ -11,10 +11,8 @@ const router = useRouter()
 const search = ref<string>('')
 
 const handleSearch = async () => {
-  const res = await store.fetchPlaylist({ term: search.value, limit: 10 });
-  if (res as any) {
-    router.push('/playlist')
-  }
+  await store.fetchPlaylist({ term: search.value, limit: 10 });
+  router.push('/playlist')
 }
 </script>
 
@@ -33,4 +31,4 @@ const handleSearch = async () => {
   bottom: 26px;
   width: auto;
 }
-</style>../stores/playlist
+</style>

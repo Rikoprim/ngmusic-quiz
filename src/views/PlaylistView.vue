@@ -8,9 +8,8 @@ const store = usePlaylistStore();
 const getPlaylist = computed(() => {
   return store.getPlaylists;
 });
-
 </script>
 
 <template>
   <pageplaylist :data-playlist="getPlaylist" />
-</template>../stores/playlist
+</template>
