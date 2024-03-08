@@ -1,12 +1,8 @@
 {
   "rewrites": [
       {
-          "source": "/api/(.*)",
+          "source": "/api",
           "destination": "https://itunes.apple.com/search"
-      },
-      {
-          "source": "/(.*)",
-          "destination": "/"
       }
   ]
 }
