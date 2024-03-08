@@ -27,13 +27,13 @@ Running in : http://localhost:5173/
 ## 🏞 Previews
 
 <p align="center">
-  <img src="/1.PNG" />
+  <img src="src/assets/screenshot/1.PNG" />
 </p>
 
 <p align="center">
-  <img src="/2.PNG" />
+  <img src="src/assets/screenshot/2.PNG" />
 </p>
 
 <p align="center">
-  <img src="/3.PNG" />
+  <img src="src/assets/screenshot/3.PNG" />
 </p>
